@@ -1,0 +1,17 @@
+FROM node:17
+
+WORKDIR /app
+
+COPY package*.json ./
+
+RUN npm install -g nodemon
+
+RUN npm install -g knex@0.95.15
+
+RUN npm install
+
+COPY . .
+
+EXPOSE 8080
+
+CMD ["npm", "start"]
