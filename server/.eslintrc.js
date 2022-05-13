@@ -16,4 +16,14 @@ module.exports = {
       'windows',
     ],
   },
+  overrides: [
+    {
+      files: [
+        '**/*.test.js',
+      ],
+      env: {
+        jest: true,
+      },
+    },
+  ],
 };
