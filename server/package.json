@@ -4,7 +4,9 @@
   "description": "API to get information about countries.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ."
+    "start": "nodemon .",
+    "test": "NODE_ENV=test jest --verbose --silent",
+    "test:watch": "npm run test -- --watchAll"
   },
   "repository": {
     "type": "git",
@@ -29,6 +31,8 @@
     "eslint": "^8.11.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-google": "^0.14.0",
-    "eslint-plugin-import": "^2.25.4"
+    "eslint-plugin-import": "^2.25.4",
+    "jest": "^28.1.0",
+    "supertest": "^6.2.3"
   }
 }
